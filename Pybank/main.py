@@ -11,7 +11,7 @@ with open(csvpath) as csvfile:
 
 # Read header row first:
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+    #print(f"CSV Header: {csv_header}")
 
 # Parameters forthe variables below:
     
@@ -60,6 +60,8 @@ with open(csvpath) as csvfile:
 #Print the analysis and export a text file with results
     average_changes = total_change / change_count
 
+    print("Financial Analysis")
+    print("------------------")
     print(f"Total months: {total_months}") 
     print(f"Total profit / loss: ${total_profit_or_loss}")
     print(f"Average changes: ${average_changes}") 
